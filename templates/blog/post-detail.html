@@ -2,14 +2,19 @@
 {% load blog_extras %}
 {% block content %}
 <h2>{{ post.title }}</h2>
-{% row %}
+{% row "mb-4" %}
   {% col %}
     {% include "blog/post-byline.html" %}
   {% endcol %}
 {% endrow %}
-{% row %}
+{% row "mb-4" %}
   {% col "border border-primary" %}
     {{ post.content|safe }}
+  {% endcol %}
+{% endrow %}
+{% row %}
+  {% col %}
+    {% include "blog/post-comments.html" %}
   {% endcol %}
 {% endrow %}
 {% row %}
@@ -17,4 +22,5 @@
     {% recent_posts post %}
   {% endcol %}
 {% endrow %}
+{% row %}
 {% endblock %}
