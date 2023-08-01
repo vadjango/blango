@@ -1,0 +1,39 @@
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+Got 3 posts
+User valakas checked the main page
+Created a comment on post 3 from user valakas
+/home/codio/workspace/blango/blango/settings.py changed, reloading.
+Watching for file changes with StatReloader
+User valakas checked the main page
+Created a comment on post 2 from user valakas
+Watching for file changes with StatReloader
+User AnonymousUser checked the main page
+User valakas checked the main page
+Not Found: /favicon.ico
+Created a comment on post 2 from user valakas
+/home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 2023-08-01 19:37:00,974 autoreload 226 139737501275968 Watching for file changes with StatReloader
+INFO 2023-08-01 19:37:25,657 autoreload 226 139737501275968 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01  autoreload 229 140164416272192 Watching for file changes with StatReloader
+INFO 01  autoreload 229 140164416272192 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01 08 23 autoreload 232 139864802862912 Watching for file changes with StatReloader
+INFO 01 08 23 autoreload 232 139864802862912 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01 08 23 autoreload 235 139776343803712 Watching for file changes with StatReloader
+INFO 01 08 23 autoreload 235 139776343803712 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01.08.23 autoreload 238 140172229879616 Watching for file changes with StatReloader
+INFO 01.08.23 autoreload 238 140172229879616 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01.08.23 autoreload 241 139630093604672 Watching for file changes with StatReloader
+INFO 01.08.23 autoreload 241 139630093604672 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01/08.23 autoreload 244 140568160294720 Watching for file changes with StatReloader
+INFO 01/08.23 autoreload 244 140568160294720 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01/08/23 19:38 autoreload 247 140588256442176 Watching for file changes with StatReloader
+INFO 01/08/23 19:38 views 247 140588144846592 User valakas checked the main page
+INFO 01/08/23 19:39 views 247 140588144846592 Created a comment on post 3 from user valakas
+INFO 01/08/23 19:40 autoreload 247 140588256442176 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01/08/23 19:40 autoreload 256 140505948989248 Watching for file changes with StatReloader
+INFO 01/08/23 19:40 views 256 140505837655808 Created a comment on post 3 from user valakas
+INFO 01/08/23 19:46 autoreload 256 140505948989248 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 01/08/23 19:46 autoreload 265 140158363641664 Watching for file changes with StatReloader
+INFO 01/08/23 19:48 autoreload 271 139767732774720 Watching for file changes with StatReloader
+INFO 01/08/23 19:57 autoreload 346 140617370490688 Watching for file changes with StatReloader

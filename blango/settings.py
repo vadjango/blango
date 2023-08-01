@@ -35,6 +35,7 @@ class Dev(Configuration):
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
 
+    DJANGO_ADMINS = values.SingleNestedTupleValue()
 
     # Application definition
 
@@ -132,7 +133,52 @@ class Dev(Configuration):
 
     CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
     CRISPY_TEMPLATE_PACK = "bootstrap5"
+    LOGGING = {
+        "version": 1,
+        "disable_existing_loggers": False,
+        "formatters": {
+            "my_formatter": {
+                "format": "{levelname} {asctime} {module} {process} {thread} {message}",
+                "style": "{",
+                "datefmt": "%d/%m/%y %H:%M"
+            }
+        },
+        "filters": {
+            "require_debug_false": {
+                "()": "django.utils.log.RequireDebugFalse"
+            }
+        },
+        "handlers": {
+            "console": {
+                "class": "logging.StreamHandler",
+                "stream": "ext://sys.stdout",
+                "formatter": "my_formatter"
+            },
+            "file": {
+                "class": "logging.FileHandler",
+                "filename": "blango.log",
+                "level": "INFO",
+                "formatter": "my_formatter"
+            },
+            "email_handler": {
+                "level": "ERROR",
+                "class": "django.utils.log.AdminEmailHandler",
+                "filters": ["require_debug_false"]
+            }
+        },
+        "loggers": {
+            "django.request": {
+                "handlers": ["email_handler"],
+                "level": "ERROR",
+                "propagate": "True"
+            }
+        },
+        "root": {
+            "handlers": ["console", "file"],
+            "level": "DEBUG"
+        }
+    }
 
 class Prod(Dev):
-  DEBUG = False
-  SECRET_KEY = values.SecretValue()
+    DEBUG = False
+    SECRET_KEY = values.SecretValue()
