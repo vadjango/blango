@@ -3,9 +3,14 @@ from django import template
 from django.contrib.auth.models import User
 # from django.utils.html import escape
 # from django.utils.safestring import mark_safe
+import logging
 from django.utils.html import format_html
+from django.core.cache import cache
+
 
 register = template.Library()
+logger = logging.getLogger(__name__)
+
 
 @register.filter
 def author_details(author, current_user):
@@ -40,7 +45,15 @@ def col(extra_classes=""):
 def endcol():
   return format_html('</div>')
 
+
+def get_recent_posts(post):
+  posts = Post.objects.exclude(pk=post.pk).order_by("-published_at")[:5]
+  logger.debug(f"Loaded {len(posts)} recent post for post {post}")
+  return posts
+
+
 @register.inclusion_tag("blog/post-list.html")
 def recent_posts(post):
-  posts = Post.objects.exclude(pk=post.pk).order_by("-published_at")[:5]
+  posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts(post))
+  logger.debug(posts)
   return {"title": "Recent Posts", "posts": posts}

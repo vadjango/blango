@@ -40,3 +40,415 @@ INFO 01/08/23 19:57 autoreload 346 140617370490688 Watching for file changes wit
 INFO 03/08/23 21:11 autoreload 636 140216433960768 Watching for file changes with StatReloader
 INFO 03/08/23 21:11 views 636 140216253806336 User AnonymousUser checked the main page
 INFO 03/08/23 21:11 views 636 140216253806336 User AnonymousUser checked the main page
+INFO 09/08/23 21:23 autoreload 379 139860093679424 Watching for file changes with StatReloader
+INFO 09/08/23 21:24 autoreload 384 140476357523264 Watching for file changes with StatReloader
+INFO 09/08/23 21:34 autoreload 384 140476357523264 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 09/08/23 21:34 autoreload 459 140167057729344 Watching for file changes with StatReloader
+INFO 09/08/23 21:34 autoreload 459 140167057729344 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 09/08/23 21:34 autoreload 467 139953897584448 Watching for file changes with StatReloader
+INFO 09/08/23 21:35 autoreload 467 139953897584448 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 09/08/23 21:35 autoreload 470 139637520516928 Watching for file changes with StatReloader
+INFO 09/08/23 21:40 autoreload 574 139738695849792 Watching for file changes with StatReloader
+INFO 09/08/23 21:41 autoreload 656 139867964651328 Watching for file changes with StatReloader
+INFO 09/08/23 21:46 autoreload 743 140037819770688 Watching for file changes with StatReloader
+INFO 10/08/23 08:12 autoreload 238 140445982992192 Watching for file changes with StatReloader
+INFO 10/08/23 08:15 autoreload 245 139706701801280 Watching for file changes with StatReloader
+ERROR 10/08/23 08:15 log 245 139706590205696 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 55, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_post(post))
+NameError: name 'cache' is not defined
+ERROR 10/08/23 08:32 log 245 139706590205696 Internal Server Error: /post/how-to-earn-while-playing-games
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 55, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_post(post))
+NameError: name 'cache' is not defined
+INFO 10/08/23 08:33 autoreload 262 140240208164672 Watching for file changes with StatReloader
+ERROR 10/08/23 08:33 log 262 140240096569088 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_post(post))
+NameError: name 'get_recent_post' is not defined
+INFO 10/08/23 08:33 autoreload 262 140240208164672 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:33 autoreload 267 139661105739584 Watching for file changes with StatReloader
+ERROR 10/08/23 08:33 log 267 139660925748992 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts(post))
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 50, in get_recent_posts
+    logger.debug(f"Loaded {len(posts)} recent post for post {post}")
+NameError: name 'posts' is not defined
+ERROR 10/08/23 08:33 log 267 139660925748992 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts(post))
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 50, in get_recent_posts
+    logger.debug(f"Loaded {len(posts)} recent post for post {post}")
+NameError: name 'posts' is not defined
+ERROR 10/08/23 08:33 log 267 139660925748992 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts(post))
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 50, in get_recent_posts
+    logger.debug(f"Loaded {len(posts)} recent post for post {post}")
+NameError: name 'posts' is not defined
+INFO 10/08/23 08:35 autoreload 267 139661105739584 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:35 autoreload 275 140014579464000 Watching for file changes with StatReloader
+ERROR 10/08/23 08:35 log 275 140014468392704 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/cache/backends/base.py", line 173, in get_or_set
+    default = default()
+TypeError: get_recent_posts() missing 1 required positional argument: 'post'
+INFO 10/08/23 08:36 autoreload 275 140014579464000 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:36 autoreload 280 140214217578304 Watching for file changes with StatReloader
+INFO 10/08/23 08:36 autoreload 280 140214217578304 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:36 autoreload 283 139756344166208 Watching for file changes with StatReloader
+ERROR 10/08/23 08:36 log 283 139756233094912 Internal Server Error: /post/my-example-post
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 35, in post_detail
+    "comment_form": comment_form})
+  File "/home/codio/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 56, in recent_posts
+    posts = cache.get_or_set(f"recent_posts_exclude_post_{post.pk}", get_recent_posts(post))
+  File "/home/codio/workspace/blango/blog/templatetags/blog_extras.py", line 50, in get_recent_posts
+    logger.debug(f"Loaded {len(posts)} recent post for post {post}")
+NameError: name 'posts' is not defined
+INFO 10/08/23 08:36 autoreload 283 139756344166208 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:36 autoreload 287 140290343499584 Watching for file changes with StatReloader
+INFO 10/08/23 08:36 autoreload 287 140290343499584 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 10/08/23 08:36 autoreload 290 140709119215424 Watching for file changes with StatReloader
