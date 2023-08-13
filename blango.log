@@ -452,3 +452,135 @@ INFO 10/08/23 08:36 autoreload 283 139756344166208 /home/codio/workspace/blango/
 INFO 10/08/23 08:36 autoreload 287 140290343499584 Watching for file changes with StatReloader
 INFO 10/08/23 08:36 autoreload 287 140290343499584 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
 INFO 10/08/23 08:36 autoreload 290 140709119215424 Watching for file changes with StatReloader
+INFO 10/08/23 08:58 autoreload 361 140576103905088 Watching for file changes with StatReloader
+INFO 10/08/23 09:05 autoreload 380 140193355310912 Watching for file changes with StatReloader
+INFO 10/08/23 09:07 autoreload 380 140193355310912 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 10/08/23 09:07 autoreload 406 139804994332480 Watching for file changes with StatReloader
+INFO 10/08/23 09:08 autoreload 406 139804994332480 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 10/08/23 09:08 autoreload 410 139779861088064 Watching for file changes with StatReloader
+INFO 10/08/23 09:08 autoreload 465 139938305554240 Watching for file changes with StatReloader
+INFO 10/08/23 09:45 autoreload 507 140219585677120 Watching for file changes with StatReloader
+INFO 10/08/23 09:47 autoreload 507 140219585677120 /home/codio/workspace/blango/blog/models.py changed, reloading.
+INFO 10/08/23 09:47 autoreload 522 139905957128000 Watching for file changes with StatReloader
+INFO 10/08/23 09:47 autoreload 531 140212542461760 Watching for file changes with StatReloader
+INFO 13/08/23 11:04 autoreload 282 140331642382144 Watching for file changes with StatReloader
+INFO 13/08/23 11:07 autoreload 364 140698727032640 Watching for file changes with StatReloader
+INFO 13/08/23 11:07 autoreload 371 140106812680000 Watching for file changes with StatReloader
+INFO 13/08/23 11:08 autoreload 446 140677495375680 Watching for file changes with StatReloader
+INFO 13/08/23 11:12 autoreload 508 140525094184768 Watching for file changes with StatReloader
+INFO 13/08/23 11:15 autoreload 573 140361400944448 Watching for file changes with StatReloader
+INFO 13/08/23 11:15 autoreload 583 139659471316800 Watching for file changes with StatReloader
+INFO 13/08/23 11:31 autoreload 1082 139752773261120 Watching for file changes with StatReloader
+INFO 13/08/23 11:34 autoreload 1082 139752773261120 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:34 autoreload 1097 140179986208576 Watching for file changes with StatReloader
+INFO 13/08/23 11:38 autoreload 1097 140179986208576 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:38 autoreload 1104 139734853244736 Watching for file changes with StatReloader
+INFO 13/08/23 11:40 autoreload 1104 139734853244736 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:40 autoreload 1113 140129914754880 Watching for file changes with StatReloader
+INFO 13/08/23 11:40 autoreload 1113 140129914754880 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:40 autoreload 1118 140402428270400 Watching for file changes with StatReloader
+INFO 13/08/23 11:40 autoreload 1118 140402428270400 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:40 autoreload 1121 140217862743872 Watching for file changes with StatReloader
+INFO 13/08/23 11:41 autoreload 1121 140217862743872 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:41 autoreload 1126 140633449162560 Watching for file changes with StatReloader
+INFO 13/08/23 11:41 autoreload 1126 140633449162560 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:41 autoreload 1131 140556679923520 Watching for file changes with StatReloader
+INFO 13/08/23 11:41 autoreload 1131 140556679923520 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:42 autoreload 1138 139763929651008 Watching for file changes with StatReloader
+ERROR 13/08/23 11:42 log 1138 139763738736384 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 22, in index
+    logger.debug(f"Got %d posts", len(posts))
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1162, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 55, in pre_sql_setup
+    self.setup_query()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 46, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 248, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 876, in get_related_selections
+    only_load.get(field_model)):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query_utils.py", line 262, in select_related_descend
+    raise FieldError(msg)
+django.core.exceptions.FieldError: Field Post.author cannot be both deferred and traversed using select_related at the same time.
+INFO 13/08/23 11:42 autoreload 1138 139763929651008 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:42 autoreload 1142 140238963660608 Watching for file changes with StatReloader
+INFO 13/08/23 11:42 autoreload 1142 140238963660608 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:42 autoreload 1147 140200483854144 Watching for file changes with StatReloader
+ERROR 13/08/23 11:42 log 1147 140200366716672 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/options.py", line 608, in get_field
+    return self.fields_map[field_name]
+KeyError: 'object_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/workspace/blango/blog/views.py", line 22, in index
+    logger.debug(f"Got %d posts", len(posts))
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1162, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 55, in pre_sql_setup
+    self.setup_query()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 46, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 227, in get_select
+    cols = self.get_default_columns()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 677, in get_default_columns
+    only_load = self.deferred_to_columns()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1102, in deferred_to_columns
+    self.query.deferred_to_data(columns, self.query.get_loaded_field_names_cb)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 722, in deferred_to_data
+    field = opts.get_field(parts[-1])
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Post has no field named 'object_id'
+INFO 13/08/23 11:43 autoreload 1147 140200483854144 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:43 autoreload 1151 140058036533056 Watching for file changes with StatReloader
+INFO 13/08/23 11:43 autoreload 1151 140058036533056 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:43 autoreload 1154 140618580744000 Watching for file changes with StatReloader
+INFO 13/08/23 11:43 autoreload 1154 140618580744000 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:43 autoreload 1159 140252395542336 Watching for file changes with StatReloader
+INFO 13/08/23 11:44 autoreload 1159 140252395542336 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:44 autoreload 1164 140040698619712 Watching for file changes with StatReloader
+INFO 13/08/23 11:44 autoreload 1164 140040698619712 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:44 autoreload 1171 140480354252608 Watching for file changes with StatReloader
+INFO 13/08/23 11:44 autoreload 1171 140480354252608 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:44 autoreload 1176 140506852464448 Watching for file changes with StatReloader
+INFO 13/08/23 11:45 autoreload 1176 140506852464448 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:45 autoreload 1181 139883273537344 Watching for file changes with StatReloader
+INFO 13/08/23 11:45 autoreload 1181 139883273537344 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:45 autoreload 1187 140358132520768 Watching for file changes with StatReloader
+INFO 13/08/23 11:45 autoreload 1187 140358132520768 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:45 autoreload 1192 139837105788736 Watching for file changes with StatReloader
+INFO 13/08/23 11:46 autoreload 1192 139837105788736 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:46 autoreload 1197 140035474024256 Watching for file changes with StatReloader
+INFO 13/08/23 11:46 autoreload 1197 140035474024256 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:46 autoreload 1202 140265898100544 Watching for file changes with StatReloader
+INFO 13/08/23 11:47 autoreload 1202 140265898100544 /home/codio/workspace/blango/blog/views.py changed, reloading.
+INFO 13/08/23 11:47 autoreload 1210 139961911678784 Watching for file changes with StatReloader

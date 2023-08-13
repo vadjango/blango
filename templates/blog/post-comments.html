@@ -1,6 +1,6 @@
 {% load blog_extras crispy_forms_tags %}
 <h4>Comments</h4>
-{% for comment in post.comments.all %}
+{% for comment in post.comments.all reversed %}
 {% row "border-top pt-2" %}
     {% col %}
         <h5>Posted by {{ comment.creator|author_details:request.user }} at {{ comment.created_at|date:"M, d Y H:i" }}</h5>
