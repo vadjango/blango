@@ -584,3 +584,11 @@ INFO 13/08/23 11:46 autoreload 1197 140035474024256 /home/codio/workspace/blango
 INFO 13/08/23 11:46 autoreload 1202 140265898100544 Watching for file changes with StatReloader
 INFO 13/08/23 11:47 autoreload 1202 140265898100544 /home/codio/workspace/blango/blog/views.py changed, reloading.
 INFO 13/08/23 11:47 autoreload 1210 139961911678784 Watching for file changes with StatReloader
+INFO 16/08/23 20:01 autoreload 787 140665928136512 Watching for file changes with StatReloader
+INFO 16/08/23 20:14 autoreload 950 140716998428480 Watching for file changes with StatReloader
+INFO 16/08/23 21:26 autoreload 1033 140504683980608 Watching for file changes with StatReloader
+INFO 16/08/23 21:26 autoreload 1038 140104383510336 Watching for file changes with StatReloader
+INFO 16/08/23 21:26 autoreload 1043 139916292724544 Watching for file changes with StatReloader
+INFO 17/08/23 10:04 autoreload 601 140329063700288 Watching for file changes with StatReloader
+INFO 17/08/23 10:07 autoreload 714 139774054393664 Watching for file changes with StatReloader
+INFO 17/08/23 11:18 autoreload 1589 140093451552576 Watching for file changes with StatReloader

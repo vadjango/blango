@@ -14,6 +14,12 @@
 {% endrow %}
 {% row %}
   {% col %}
+    <h4>About the author: </h4>
+    <p>{{ post.author.profile.bio }}</p>
+  {% endcol %}
+{% endrow %}
+{% row %}
+  {% col %}
     {% include "blog/post-comments.html" %}
   {% endcol %}
 {% endrow %}
