@@ -49,7 +49,7 @@ class Dev(Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'blog',
-	'blango_auth',
+	    'blango_auth',
         "crispy_forms",
         "crispy_bootstrap5",
         "debug_toolbar",
@@ -190,6 +190,9 @@ class Dev(Configuration):
       'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
     ]
     AUTH_USER_MODEL = "blango_auth.User"
+    ACCOUNT_ACTIVATION_DAYS = 7
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    # REGISTRATION_OPEN = False
 
 class Prod(Dev):
     DEBUG = False

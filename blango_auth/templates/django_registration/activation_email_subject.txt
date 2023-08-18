@@ -1,0 +1,1 @@
+Activate your Blango account, {{ user }}! You have only {{ expiration_days }} days!
