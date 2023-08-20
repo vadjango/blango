@@ -592,3 +592,26 @@ INFO 16/08/23 21:26 autoreload 1043 139916292724544 Watching for file changes wi
 INFO 17/08/23 10:04 autoreload 601 140329063700288 Watching for file changes with StatReloader
 INFO 17/08/23 10:07 autoreload 714 139774054393664 Watching for file changes with StatReloader
 INFO 17/08/23 11:18 autoreload 1589 140093451552576 Watching for file changes with StatReloader
+INFO 20/08/23 08:36 autoreload 393 140580155279168 Watching for file changes with StatReloader
+ERROR 20/08/23 08:39 log 393 140579849631488 Internal Server Error: /accounts/google/login/
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/codio/.local/lib/python3.6/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 77, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/codio/.local/lib/python3.6/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 105, in dispatch
+    app = provider.get_app(self.request)
+  File "/home/codio/.local/lib/python3.6/site-packages/allauth/socialaccount/providers/base.py", line 49, in get_app
+    return adapter.get_app(request, self.id)
+  File "/home/codio/.local/lib/python3.6/site-packages/allauth/socialaccount/adapter.py", line 204, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "/home/codio/.local/lib/python3.6/site-packages/allauth/socialaccount/models.py", line 32, in get_current
+    app = self.get(sites__id=site.id, provider=provider)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+INFO 20/08/23 08:41 views 393 140579849631488 Created a comment on post 1 from user z9661744@gmail.com
