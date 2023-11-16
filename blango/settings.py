@@ -41,6 +41,15 @@ class Dev(Configuration):
 
     # Application definition
 
+
+    REST_FRAMEWORK = {
+      "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+      ]
+    }
+
     INSTALLED_APPS = [
         'django.contrib.admin',
         'django.contrib.auth',
@@ -58,7 +67,8 @@ class Dev(Configuration):
         'allauth.account',
         'allauth.socialaccount',
         'allauth.socialaccount.providers.google',  
-        'rest_framework'
+        'rest_framework',
+        'rest_framework.authtoken'
       ]
 
     MIDDLEWARE = [
