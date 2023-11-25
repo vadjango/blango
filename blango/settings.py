@@ -71,7 +71,8 @@ class Dev(Configuration):
         'allauth.socialaccount',
         'allauth.socialaccount.providers.google',  
         'rest_framework',
-        'rest_framework.authtoken'
+        'rest_framework.authtoken',
+        'drf_yasg'
       ]
 
     MIDDLEWARE = [
@@ -216,7 +217,15 @@ class Dev(Configuration):
     ACCOUNT_EMAIL_REQUIRED = True
     ACCOUNT_USERNAME_REQUIRED = False
     ACCOUNT_AUTHENTICATION_METHOD = "email"
-    # REGISTRATION_OPEN = False
+    
+
+    SWAGGER_SETTINGS = {
+        "SECURITY_DEFINITIONS": {
+            "Token": {"type": "apiKey", "name": "Authorization", "in": "header"},
+            "Basic": {"type": "basic"}
+        }
+    }
+
 
 class Prod(Dev):
     DEBUG = False

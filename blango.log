@@ -616,3 +616,95 @@ Traceback (most recent call last):
 allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
 INFO 20/08/23 08:41 views 393 140579849631488 Created a comment on post 1 from user z9661744@gmail.com
 INFO 16/11/23 09:33 autoreload 386 140124633220928 Watching for file changes with StatReloader
+INFO 25/11/23 10:51 autoreload 142 140575456335680 Watching for file changes with StatReloader
+INFO 25/11/23 10:51 autoreload 149 140607418152768 Watching for file changes with StatReloader
+WARNING 25/11/23 10:51 generators 149 140607219087104 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+ERROR 25/11/23 10:51 log 149 140607219087104 Internal Server Error: /api/v1/swagger/
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/codio/.local/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/codio/.local/lib/python3.6/site-packages/drf_yasg/renderers.py", line 79, in render
+    return render_to_string(self.template, renderer_context, renderer_context['request'])
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: drf-yasg/swagger-ui.html
+WARNING 25/11/23 10:52 generators 149 140607219087104 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+ERROR 25/11/23 10:52 log 149 140607219087104 Internal Server Error: /api/v1/swagger/
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/codio/.local/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/codio/.local/lib/python3.6/site-packages/drf_yasg/renderers.py", line 79, in render
+    return render_to_string(self.template, renderer_context, renderer_context['request'])
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: drf-yasg/swagger-ui.html
+INFO 25/11/23 10:53 autoreload 149 140607418152768 /home/codio/workspace/blango/blog/api/urls.py changed, reloading.
+INFO 25/11/23 10:53 autoreload 159 140220726187840 Watching for file changes with StatReloader
+WARNING 25/11/23 10:53 generators 159 140220527163136 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+ERROR 25/11/23 10:53 log 159 140220527163136 Internal Server Error: /api/v1/swagger/
+Traceback (most recent call last):
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/codio/.local/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/codio/.local/lib/python3.6/site-packages/drf_yasg/renderers.py", line 79, in render
+    return render_to_string(self.template, renderer_context, renderer_context['request'])
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/codio/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: drf-yasg/swagger-ui.html
+INFO 25/11/23 10:54 autoreload 159 140220726187840 /home/codio/workspace/blango/blog/api/urls.py changed, reloading.
+INFO 25/11/23 10:54 autoreload 165 139845193946944 Watching for file changes with StatReloader
+INFO 25/11/23 11:04 autoreload 174 140159472498496 Watching for file changes with StatReloader
+INFO 25/11/23 11:05 autoreload 174 140159472498496 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 25/11/23 11:05 autoreload 179 140389696927552 Watching for file changes with StatReloader
+WARNING 25/11/23 11:05 generators 179 140389564991232 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:05 generators 179 140389553878784 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:05 generators 179 140389553878784 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:05 generators 179 140389553878784 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:05 generators 179 140389553878784 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:05 generators 179 140389553878784 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+INFO 25/11/23 11:21 autoreload 179 140389696927552 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 25/11/23 11:21 autoreload 510 139886802954048 Watching for file changes with StatReloader
+WARNING 25/11/23 11:21 generators 510 139886603843328 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:21 generators 510 139886603843328 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:21 generators 510 139886603843328 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:21 generators 510 139886603843328 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:21 generators 510 139886603843328 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:21 generators 510 139886591682304 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+INFO 25/11/23 11:22 autoreload 510 139886802954048 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 25/11/23 11:22 autoreload 523 139685883537216 Watching for file changes with StatReloader
+INFO 25/11/23 11:22 autoreload 523 139685883537216 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 25/11/23 11:22 autoreload 528 140441931089728 Watching for file changes with StatReloader
+WARNING 25/11/23 11:22 generators 528 140441732560640 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 528 140441732560640 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 528 140441732560640 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+INFO 25/11/23 11:22 autoreload 528 140441931089728 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 25/11/23 11:22 autoreload 536 140392283293504 Watching for file changes with StatReloader
+WARNING 25/11/23 11:22 generators 536 140392079030016 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 536 140392079030016 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
