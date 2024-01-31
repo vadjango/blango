@@ -708,3 +708,6 @@ WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base
 WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
 WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
 WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base URL https://penguinpamela-famousnato-8000.codio.io/api/v1/ is ignored; use FORCE_SCRIPT_NAME instead
+INFO 31/01/24 09:02 autoreload 1350 140711744673600 Watching for file changes with StatReloader
+INFO 31/01/24 09:03 autoreload 1350 140711744673600 /home/codio/workspace/blango/blog/api/views.py changed, reloading.
+INFO 31/01/24 09:03 autoreload 1373 139790223038272 Watching for file changes with StatReloader
