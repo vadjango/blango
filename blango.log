@@ -711,3 +711,6 @@ WARNING 25/11/23 11:22 generators 536 140392070637312 path component of api base
 INFO 31/01/24 09:02 autoreload 1350 140711744673600 Watching for file changes with StatReloader
 INFO 31/01/24 09:03 autoreload 1350 140711744673600 /home/codio/workspace/blango/blog/api/views.py changed, reloading.
 INFO 31/01/24 09:03 autoreload 1373 139790223038272 Watching for file changes with StatReloader
+INFO 03/02/24 21:25 autoreload 206 140001996023616 Watching for file changes with StatReloader
+INFO 03/02/24 21:31 autoreload 206 140001996023616 /home/codio/workspace/blango/blango/settings.py changed, reloading.
+INFO 03/02/24 21:33 autoreload 287 139790571398976 Watching for file changes with StatReloader
