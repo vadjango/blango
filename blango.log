@@ -714,3 +714,17 @@ INFO 31/01/24 09:03 autoreload 1373 139790223038272 Watching for file changes wi
 INFO 03/02/24 21:25 autoreload 206 140001996023616 Watching for file changes with StatReloader
 INFO 03/02/24 21:31 autoreload 206 140001996023616 /home/codio/workspace/blango/blango/settings.py changed, reloading.
 INFO 03/02/24 21:33 autoreload 287 139790571398976 Watching for file changes with StatReloader
+INFO 04/02/24 10:16 autoreload 209 140276648179520 Watching for file changes with StatReloader
+INFO 04/02/24 10:21 autoreload 243 140718222473024 Watching for file changes with StatReloader
+INFO 04/02/24 12:33 autoreload 143 140653832357696 Watching for file changes with StatReloader
+INFO 04/02/24 15:12 autoreload 580 140534820173632 Watching for file changes with StatReloader
+INFO 04/02/24 15:22 autoreload 915 140244661266240 Watching for file changes with StatReloader
+INFO 04/02/24 15:30 autoreload 915 140244661266240 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 04/02/24 15:30 autoreload 945 139741146912576 Watching for file changes with StatReloader
+INFO 04/02/24 15:30 autoreload 958 140587890882368 Watching for file changes with StatReloader
+INFO 04/02/24 15:32 autoreload 958 140587890882368 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 04/02/24 15:32 autoreload 968 140132664518464 Watching for file changes with StatReloader
+INFO 04/02/24 15:33 autoreload 968 140132664518464 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 04/02/24 15:33 autoreload 978 139812666279744 Watching for file changes with StatReloader
+INFO 04/02/24 15:33 autoreload 978 139812666279744 /home/codio/workspace/blango/blog/templatetags/blog_extras.py changed, reloading.
+INFO 04/02/24 15:33 autoreload 985 140466917533504 Watching for file changes with StatReloader

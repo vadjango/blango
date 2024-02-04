@@ -18,6 +18,13 @@
     <p>{{ post.author.profile.bio }}</p>
   {% endcol %}
 {% endrow %}
+{% if post.hero_image %}
+  {% row %}
+    {% col %}
+      <img class="img-fluid" src="{{ post.hero_image.url }}">
+    {% endcol %}
+  {% endrow %}
+{% endif %}
 {% row %}
   {% col %}
     {% include "blog/post-comments.html" %}
