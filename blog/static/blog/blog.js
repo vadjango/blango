@@ -1,21 +1,44 @@
-for (let i = 0; i < 10; i++) {
-  console.log("For-loop counter: " + i);
+class Greeter {
+  constructor(name) {
+    this.name = name;
+  }
+  getGreeting() {
+    if (this.name === undefined) {
+      return "Hello, no name"
+    } else {
+      return "Hello, " + this.name
+    }
+  }
+  showGreeting(greetingMessage) {
+    console.log(greetingMessage);
+  }
+  greet() {
+    this.showGreeting(this.getGreeting())
+  }
 }
 
-let j = 0;
-while (j < 10) {
-  console.log("While-loop j: " + j);
-  j += 1;
+class DelayedGreeter extends Greeter {
+  delay = 2000
+  
+  constructor(name, delay) {
+    super(name);
+    if (delay !== undefined) {
+      this.delay = delay
+    }
+  }
+  greet() {
+    setTimeout(() => {
+      this.showGreeting(this.getGreeting())
+    }, this.delay);
+  }
 }
 
-let k = 10;
+const noNameGreeter = new Greeter();
+const namedGreeter = new Greeter("Vadim");
 
-do {
-  console.log("do-while loop k: " + k);
-} while (k < 10);
-
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-numbers.forEach((value) => {console.log("Element: " + value)});
-const squared = numbers.map(value => value ** 2);
-console.log(squared);
+const delayedGreeter = new DelayedGreeter("Vasia")
+const delayDefinedGreeter = new DelayedGreeter("Olia", 1000);
+noNameGreeter.greet();
+namedGreeter.greet();
+delayedGreeter.greet();
+delayDefinedGreeter.greet();
