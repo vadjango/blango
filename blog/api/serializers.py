@@ -55,14 +55,6 @@ class PostSerializer(serializers.ModelSerializer):
   author = serializers.HyperlinkedRelatedField(queryset=User.objects.all(),
                                                view_name="api_user_detail",
                                                lookup_field="email")
-  class Meta:
-    model = Post
-    exclude = ["ppoi"]
-    readonly = ["modified_at", "created_at"]
-
-
-class PostDetailSerializer(PostSerializer):
-  comments = CommentSerializer(many=True)
   hero_image = VersatileImageFieldSerializer(
     sizes=[
       ("full_size", "url"),
@@ -71,6 +63,14 @@ class PostDetailSerializer(PostSerializer):
     ],
     read_only=True
   )
+  class Meta:
+    model = Post
+    exclude = ["ppoi"]
+    readonly = ["modified_at", "created_at"]
+
+
+class PostDetailSerializer(PostSerializer):
+  comments = CommentSerializer(many=True)
 
   def update(self, instance, validated_data):
     comments = validated_data.pop("comments")
